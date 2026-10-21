@@ -72,6 +72,11 @@ def landmark_to_np(landmark, w, h):
     return np.array([landmark.x * w, landmark.y * h, landmark.z * w])
 
 
+# Trecho baseado no Webcam3DTracker,
+# do projeto EyeTracker, por JEOresearch.
+# Original: https://github.com/JEOresearch/EyeTracker
+# Licença do código original: MIT.
+# Adaptações realizadas neste projeto.
 
 def desenhar_cubo(landmarks, largura, altura):
         key_points = {}
